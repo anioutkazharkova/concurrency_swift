@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorRoundButton" customModule="HSLImageProcessing" customModuleProvider="target">
+            <connections>
+                <outlet property="circle" destination="djk-Hh-315" id="sXz-vq-jZJ"/>
+                <outlet property="frameView" destination="Hf5-NM-BlZ" id="UQt-Dx-aGN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-NM-BlZ" customClass="RoundImage" customModule="HSLImageProcessing" customModuleProvider="target">
+                    <rect key="frame" x="1" y="1" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="Tjm-Jc-oyf"/>
+                        <constraint firstAttribute="height" constant="38" id="qdA-rO-mgM"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djk-Hh-315" customClass="RoundImage" customModule="HSLImageProcessing" customModuleProvider="target">
+                    <rect key="frame" x="6.5" y="6.5" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="TMV-Rf-G8F"/>
+                        <constraint firstAttribute="width" constant="27" id="b53-9B-7gw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="djk-Hh-315" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YLk-wd-p91"/>
+                <constraint firstItem="djk-Hh-315" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ifQ-93-utD"/>
+                <constraint firstItem="Hf5-NM-BlZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lXZ-qn-3Az"/>
+                <constraint firstItem="Hf5-NM-BlZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sos-WT-V0s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
